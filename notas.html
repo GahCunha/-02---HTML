@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas - Spy x Family</title>
+  </head>
+  <body>
+    <header>
+      <h1>Spy x Family</h1>
+      <img src="/images/spyxfamily.jpg" alt="Imagem do Spy x Family" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="personagens.html">Personagens</a></li>
+          <li><a href="notas.html">Notas</a></li>
+        </ul>
+      </nav>
+      <h2>Notas</h2>
+    </header>
+    <section>
+      <p>
+        Spy x Family é um mangá escrito e ilustrado por Tatsuya Endo. A história
+        segue a vida de um espião chamado Loid Forger, que é contratado para
+        realizar uma missão impossível: se infiltrar na escola de elite Eden
+        Academy e se casar com a professora Anya Forger, a fim de se aproximar
+        do líder do país vizinho de Ostania. Para isso, ele precisa de uma
+        família falsa, e acaba adotando uma menina chamada Anya, que é uma
+        telepata.
+      </p>
+
+      <h3>Trailer oficial</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0CJr6AfE2rY?si=wavmr75bSSh5MlR1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <h3>Links Úteis</h3>
+      <ul>
+        <li><a href="https://www.crunchyroll.com/spy-x-family">Assistir no Crunchyroll</a></li>
+        <li><a href="https://www.viz.com/spy-x-family">Ler no Viz</a></li>
+        <li><a href="https://twitter.com/spyfamily_en">Twitter Oficial</a></li>
+      </ul>
+    </section>
+    <section>
+      <h1>Episódios</h1>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Episódio</th>
+            <th>Título</th>
+            <th>Data de Lançamento</th>
+            <th>Duração</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Missão Secreta</td>
+            <td>10/04/2023</td>
+            <td>24 minutos</td>
+            <td>Lançado</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Primeiro Contato</td>
+            <td>17/04/2023</td>
+            <td>24 minutos</td>
+            <td>Lançado</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Plano da Família</td>
+            <td>24/04/2023</td>
+            <td>24 minutos</td>
+            <td>Lançado</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Desafio na Escola</td>
+            <td>01/05/2023</td>
+            <td>24 minutos</td>
+            <td>Lançado</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Segredos Revelados</td>
+            <td>08/05/2023</td>
+            <td>24 minutos</td>
+            <td>Planejado</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h3>Inscreva-se para Atualizações</h3>
+      <form action="/inscrever" method="POST">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        />
+        <br />
+
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Seu e-mail"
+          required
+        />
+        <br />
+
+        <label for="preferencia">Preferência de conteúdo:</label>
+        <select id="preferencia" name="preferencia">
+          <option value="noticias">Notícias</option>
+          <option value="episodios">Episódios</option>
+          <option value="eventos">Eventos</option>
+        </select>
+        <br />
+
+        <label for="frequencia">Frequência de envio:</label>
+        <input type="radio" id="diaria" name="frequencia" value="diaria" />
+        <label for="diaria">Diária</label>
+        <input type="radio" id="semanal" name="frequencia" value="semanal" />
+        <label for="semanal">Semanal</label>
+        <input type="radio" id="mensal" name="frequencia" value="mensal" />
+        <label for="mensal">Mensal</label>
+        <br />
+
+        <label for="consentimento">Aceito receber as atualizações:</label>
+        <input
+          type="checkbox"
+          id="consentimento"
+          name="consentimento"
+          required
+        />
+        <br />
+
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </section>
+  </body>
+</html>

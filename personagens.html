@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personagens - Spy x Family</title>
+  </head>
+  <body>
+    <header>
+      <h1>Spy x Family</h1>
+      <img src="/images/spyxfamily.jpg" alt="Spy x Family" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="personagens.html">Personagens</a></li>
+          <li><a href="notas.html">Notas</a></li>
+        </ul>
+      </nav>
+      <h2>Personagens</h2>
+    </header>
+    <section>
+      <ul>
+        <li>
+          <div>
+            <img src="/images/anya.png" alt="Anya" />
+            <h3>Anya Forger</h3>
+            <p>Idade: 6 anos</p>
+            <p>Descrição: Filha adotiva de Loid Forger e Yor Forger</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/images/loyd.jpg" alt="Loid" />
+            <h3>Loid Forger</h3>
+            <p>Idade: 27 anos</p>
+            <p>Descrição: Espião e pai adotivo da Anya Forger</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/images/yor.jpg" alt="Yor" />
+            <h3>Yor Forger</h3>
+            <p>Idade: 29 anos</p>
+            <p>Descrição: Assassina e mãe adotiva de Anya Forger</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/images/FrankyFranklin.webp" alt="Franky" />
+            <h3>Franky Franklin</h3>
+            <p>Idade: 30 anos</p>
+            <p>Descrição: Informante do WISE</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Deixe sua avaliação sobre os personagens</h3>
+      <form action="/avaliacao" method="POST">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+        />
+        <br />
+
+        <label for="personagem">Escolha um personagem:</label>
+        <select id="personagem" name="personagem">
+          <option value="anya">Anya Forger</option>
+          <option value="loid">Loid Forger</option>
+          <option value="yor">Yor Forger</option>
+          <option value="franky">Franky Franklin</option>
+        </select>
+        <br />
+
+        <label for="avaliacao">Avaliação (1-5):</label>
+        <input type="radio" id="1estrela" name="avaliacao" value="1" />
+        <label for="1estrela">1 estrela</label>
+        <input type="radio" id="2estrela" name="avaliacao" value="2" />
+        <label for="2estrela">2 estrelas</label>
+        <input type="radio" id="3estrela" name="avaliacao" value="3" />
+        <label for="3estrela">3 estrelas</label>
+        <input type="radio" id="4estrela" name="avaliacao" value="4" />
+        <label for="4estrela">4 estrelas</label>
+        <input type="radio" id="5estrela" name="avaliacao" value="5" />
+        <label for="5estrela">5 estrelas</label>
+        <br />
+
+        <label for="comentario">Comentário (opcional):</label>
+        <textarea
+          id="comentario"
+          name="comentario"
+          rows="4"
+          cols="50"
+          placeholder="Deixe um comentário sobre o personagem escolhido"
+        ></textarea>
+        <br />
+
+        <button type="submit">Enviar Avaliação</button>
+      </form>
+    </section>
+    <section>
+      <h1>
+        Avaliações dos Personagens
+      </h1>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Personagem</th>
+            <th>Avaliações (1-5)</th>
+            <th>Média</th>
+            <th>Qtd. de Avaliações</th>
+            <th>Comentários</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anya Forger</td>
+            <td>5, 4, 5</td>
+            <td>4.7</td>
+            <td>3</td>
+            <td>Ótima personagem!</td>
+          </tr>
+          <tr>
+            <td>Loid Forger</td>
+            <td>4, 4, 5</td>
+            <td>4.3</td>
+            <td>3</td>
+            <td>Muito habilidoso.</td>
+          </tr>
+          <tr>
+            <td>Yor Forger</td>
+            <td>5, 5, 4</td>
+            <td>4.7</td>
+            <td>3</td>
+            <td>Adoro as cenas de ação dela!</td>
+          </tr>
+          <tr>
+            <td>Franky Franklin</td>
+            <td>3, 4, 3</td>
+            <td>3.3</td>
+            <td>3</td>
+            <td>Personagem engraçado.</td>
+          </tr>
+          <tr>
+            <td>Damian Desmond</td>
+            <td>4, 4, 3</td>
+            <td>3.7</td>
+            <td>3</td>
+            <td>Bom desenvolvimento.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
